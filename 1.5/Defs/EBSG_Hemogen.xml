@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_HemogenGain" Abstract="true">
+        <displayCategory>Hemogen</displayCategory>
+        <prerequisite>Hemogenic</prerequisite>
+        <exclusionTags>
+            <li>EBSG_HemogenGain</li>
+        </exclusionTags>
+    </GeneDef>
+
+            <!--You're welcome for the headache.-->
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainLossMajor</defName>
+        <label>very inefficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGainLoss</iconPath>
+        <description>Carriers of this gene are almost completely incapable of processing the blood of others into hemogen.</description>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <minAgeActive>3</minAgeActive>
+        <statFactors>
+            <HemogenGainFactor>0.25</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainLoss</defName>
+        <label>inefficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGainLoss</iconPath>
+        <description>Carriers of this gene have difficulty processing the blood of others into hemogen.</description>
+        <displayOrderInCategory>1.1</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <HemogenGainFactor>0.5</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainLossMinor</defName>
+        <label>somewhat inefficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGainLoss</iconPath>
+        <description>Carriers of this gene have some difficulty processing the blood of others into hemogen.</description>
+        <displayOrderInCategory>1.2</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <HemogenGainFactor>0.75</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainMinor</defName>
+        <label>somewhat efficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGain</iconPath>
+        <description>Carriers of this gene process the blood of others into hemogen a little more efficiently.</description>
+        <displayOrderInCategory>1.3</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <HemogenGainFactor>1.25</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGain</defName>
+        <label>efficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGain</iconPath>
+        <description>Carriers of this gene processing the blood of others into hemogen more efficiently.</description>
+        <displayOrderInCategory>1.4</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <HemogenGainFactor>1.50</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainMajor</defName>
+        <label>very efficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGain</iconPath>
+        <description>Carriers of this gene processing the blood of others into hemogen a lot more efficiently.</description>
+        <displayOrderInCategory>1.5</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <HemogenGainFactor>1.75</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainExtreme</defName>
+        <label>extremely efficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
+        <description>Carriers of this gene processing the blood of others into hemogen extremely efficiently.</description>
+        <displayOrderInCategory>1.6</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <HemogenGainFactor>2.00</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainSuper</defName>
+        <label>super efficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
+        <description>Carriers of this gene processing the blood of others into hemogen super efficiently.</description>
+        <displayOrderInCategory>1.7</displayOrderInCategory>
+        <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <HemogenGainFactor>2.25</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain">
+        <defName>EBSG_HemogenGainHyper</defName>
+        <label>hyper efficient hemo-precessing</label>
+        <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
+        <description>Carriers of this gene processing the blood of others into hemogen unbelievably efficiently.</description>
+        <displayOrderInCategory>1.8</displayOrderInCategory>
+        <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <HemogenGainFactor>2.50</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+</Defs>
